@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Virtual Reality Systems</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="../https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            </button>
+        </div>
+        <div class="img bg-wrap text-center py-4"
+             style="background-image: url(https://scontent.fksc1-1.fna.fbcdn.net/v/t1.6435-9/73295856_2292915594351851_575696089210945536_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=yGC-ZT724bcAX-EPkIg&tn=IlRIds2fYuLGbcbn&_nc_ht=scontent.fksc1-1.fna&oh=00_AT8Ui5hc6upew8r2zJ21V3_VITgJrNktSrdLegze_7D1Bw&oe=6230592C);">
+            <div class="user-logo">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="img"
+                             style="background-image: url(https://kpi.fei.tuke.sk/sites/www.kpi.fei.tuke.sk/files/pictures/picture-11101-1647540531.jpg);"></div>
+                        <h3>Miriama Mattová</h3>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="img"
+                             style="background-image: url(https://kpi.fei.tuke.sk/sites/www.kpi.fei.tuke.sk/files/pictures/picture-32-1391785320.jpg);"></div>
+                        <h3>Branislav Sobota</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="list-unstyled components mb-5">
+            <li class="active">
+                <a href="../menu/home.html"><span class="fa fa-home mr-3"></span> Home</a>
+            </li>
+            <li>
+                <a href="../menu/set-up-environment.html"><span class="fa fa-sign-out mr-3"></span> Set-up the
+                    environment</a>
+            </li>
+            <li class=" ">
+                <a href="../menu/UnityIntro.html"><span class="fa fa-download mr-3"><small
+                        class="d-flex align-items-center justify-content-center"></small></span> <i class="">1.
+                    Introduction <p style="font-size: small">(Unity, components, programming)</p></i></a>
+            </li>
+            <li class="">
+                <a href="../menu/realization.html"><span class="fa fa-download mr-3"><small
+                        class="d-flex align-items-center justify-content-center"></small></span> <i class="">2.
+                    Realization <p style="font-size: small">(3D graphic, obj creating)</p></i></a>
+            </li>
+            <li class="disabled ">
+                <a href="#"><span class="fa fa-trophy mr-3"></span> <i class="dark-gray">3. Interaction <p
+                        style="font-size: small">(GVR assets)</p></i></a>
+            </li>
+            <li class="disabled">
+                <a href="#"><span class="fa fa-cog mr-3"></span> <i class="dark-gray"> 4. Content not available</i></a>
+            </li>
+            <li class="disabled ">
+                <a href="#"><span class="fa fa-support mr-3"></span> <i class="dark-gray">5. Content not
+                    available</i></a>
+            </li>
+            <li class="disabled ">
+                <a href="#"><span class="fa fa-sign-out mr-3"></span> <i class="dark-gray">6. Content not available</i></a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5 excersise2-background">
+        <h1 class="text-center white">Realization - Exercise 2.</h1>
+
+        <div class="">
+            <div class="bg-steps row p-2 ">
+                <h2 class="col-12 white text-center">Exercise goals</h2>
+                <!--                <p class="col-9 white">In this goal we want to learn how to set up the environment</p>-->
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 1. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Create simple scene </h4>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 2. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Implement head movement simulator</h4>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 3. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> 3D graphic in VR (Unity version with examples)  </h4>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 4. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Create color changer component  </h4>
+                </div>
+            </div>
+            <!--            <div class=" row p-1">-->
+            <!--                <div class="col-2 bg-steps-info text-center">-->
+            <!--                    <h4 class="white p-2"> 5. Goal </h4>-->
+            <!--                </div>-->
+            <!--                <div class="col-10 bg-goals">-->
+            <!--                    <h4 class="txt-black p-2"> Familiarization with the limitations of PG (computer graphics) in the-->
+            <!--                        development of VR (with examples) </h4>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <!--            STEP 1 -->
+            <div class="">
+                <div class="bg-steps row p-2 ">
+                    <h2 class="col-3 white">1. Goal</h2>
+                    <p class="col-9 white">In this goal we want to create simple scene</p>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 1. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Create plane </p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=12pt8xYKmv7ohg_WF3DZlL7-cpmbeexU_">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 2. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Select all objects in scene and reset their transform </p>
+                        <img class="w-inherit p-2 w-80"
+                             src="https://drive.google.com/uc?export=view&id=17BSPCOYlQlngoASjDY5JXg5qnqUtrJ_M">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 3. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> - Select directional light and set Rotation x to 58 </p>
+                        <p class="white"> - Select cube and set Position y to 0.7 </p>
+                        <p class="white"> - Select main camera and set Position y to 1.47 and z to -2.64 </p>
+                        <p class="white"> Output: </p>
+                        <img class="w-inherit p-2 w-60"
+                             src="https://drive.google.com/uc?export=view&id=1ZwLvr4MvEUHa9gdOPpL_G7SHXM6NFg0D">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 4. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Right click in a project window and create new material, then set color to
+                            red: </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p> 1. Create material </p>
+                                <img class="w-inherit p-2 w-60"
+                                     src="https://drive.google.com/uc?export=view&id=13bbNW6lQReBY1uuFwgrBmH5FDYC2_uDb">
+                            </div>
+                            <div class="col-6">
+                                <p> 2. Set color </p>
+                                <img class="w-inherit p-2 w-60"
+                                     src="https://drive.google.com/uc?export=view&id=1iUtjZz55IWPrgZCsKu3tXeBVU8uxi7o2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 5. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Drag and drop material on a cube</p>
+                        <p class="white"> Output: </p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1J4jPMO3OiBDEI7nc60imeJxeoQ7UxZoL">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!--            STEP 2 -->
+            <div class="">
+                <div class="bg-steps row p-2">
+                    <h3 class="col-3 white">2. Goal</h3>
+                    <p class="col-9 white">In this goal we want to create desktop avatar with a movement specific for
+                        first-person gameplay</p>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 1. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white "> - Create empty object </p>
+                        <p class="white "> - Set its position in the same way as cameras position </p>
+                        <p class="white "> - Call the empty object "Avatar" </p>
+                        <img class="w-inherit p-2 w-80"
+                             src="https://drive.google.com/uc?export=view&id=1b0HHCStVOh-yMCGMbkM21L5UTKftC5Y3">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 2. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Child your Main camera to Avatar</p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1x-ObO77iYzO8Em31Ndu_MsmNjS_mk2z0">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 3. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Navigate to Edit -> Project Settings -> Input Manager</p>
+                        <p class="white"> Discuss the input manager logic</p>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 4. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> - Create empty object within Avatar and call it "Settings" </p>
+                        <img class="w-inherit p-2 w-80"
+                             src="https://drive.google.com/uc?export=view&id=1ilxTubpZ3w9tLaRtdFIRo0n5sZ5dsHKq">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 5. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> - Search for GoogleVR/Prefabs/GvrEditorEmulator </p>
+                        <p class="white"> - Drag this prefab under Settings </p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1MaRCnRgMYQKef9uNsTypDUGGcTo30Fo7">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 6. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Now you should be able to move in play mode. Try it! </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+
+            <!--            STEP 3 -->
+            <div class="">
+                <div class="bg-steps row p-2 ">
+                    <h2 class="col-3 white">3. Goal</h2>
+                    <p class="col-9 white">In this goal we want to learn how to set use optimized graphics for VR via
+                        Unity engine</p>
+                    <div class="">
+                        <p class="txt-black"> Helpfull literature: <a
+                                href="https://www.intechopen.com/online-first/3d-computer-graphics-and-virtual-reality"
+                                target="_blank">3D
+                            computer graphics and virtual reality </a></p>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 1. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <h3 class="white"> Lighting </h3>
+                        <p class="white"> Let's discuss lights and optimization in Unity</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center"> Overall photo</p>
+                                <img class="w-inherit p-2 w-100 center"
+                                     src="https://drive.google.com/uc?export=view&id=1xddec18mXg_QCpcSqu-0wolvaQ0Yaqes">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center"> Commentary and examples from excersise (Not available yet :))</p>
+                                <iframe class="center" width="500" height="350"
+                                        src="https://www.youtube.com/embed/Twi92KYddW4">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 2. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <h3 class="white"> 3D objects </h3>
+                        <p class="white"> Let's discuss geometry, textures, polygons and how to set up the right
+                            sizes</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center"> Overall photo</p>
+                                <img class="w-inherit p-2 w-50 center"
+                                     src="https://drive.google.com/uc?export=view&id=1INHai_1CHVBIp-_8jP023NOTgtiuhzKJ">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center"> Commentary and examples from excersise (Not available yet :))</p>
+                                <iframe class="center" width="500" height="350"
+                                        src="https://www.youtube.com/embed/VBlFHuCzPgY">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 3. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <h3 class="white"> Camera </h3>
+                        <p class="white"> Let's discuss how to set up the occlusion culling</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center"> Overall photo</p>
+                                <img class="w-inherit p-2 w-50 center"
+                                     src="https://drive.google.com/uc?export=view&id=1_DU1l179BN3HAT0P789vt9SL9-gUVpxt">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center"> Commentary and examples from excersise (Not available yet :))</p>
+                                <iframe class="center" width="500" height="350"
+                                        src="https://www.youtube.com/embed/v6jw6KRIOmw">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 4. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <h3 class="white"> Scenes </h3>
+                        <p class="white"> Let's shortly discuss wide scenes vs small scenes on following example</p>
+                        <img class="w-10 h-10"
+                             src="https://www.researchgate.net/profile/Tobias-Dehling/publication/323168435/figure/fig2/AS:593904265093121@1518609219999/The-simulated-apartment-in-UNITY3D.png">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+<!--            GOAL 4  -->
+            <div class="">
+                <div class="bg-steps row p-2 ">
+                    <h2 class="col-3 white">4. Goal</h2>
+                    <p class="col-9 white">In this goal we want to create own change color component</p>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 1. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Click on cube, Add component and type SetColor and hit new script </p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1Ai7i2iQPrudhUsRNDs8QlO2O7a5wPals">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 2. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Let's write this code: </p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1550I4i42o2hElS3xGSsge1kR5gdp8pyq">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 3. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Dont forget to assign MeshRenderer: </p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1D6edcNc2FVOgjMo89XRhevoIYb3MIVmY">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 4. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Hit run, and try color changing in run-time</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="">
+                <div class="bg-steps row p-2">
+                    <h2 class="col-12 white">Video from online excersise </h2>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-12 bg-steps-content">
+                        <p class="white "> Video will be uploaded after online exercise on monday </p>
+                        <img class="w-10 h-10"
+                             src="https://www.spartalibrary.org/wp-content/uploads/2020/04/yoda-patience-mem.jpg">
+                        <!--                        <iframe width="500" height="400"-->
+                        <!--                                src="https://www.youtube.com/embed/6MN5fFmuFuY">-->
+                        <!--                        </iframe>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

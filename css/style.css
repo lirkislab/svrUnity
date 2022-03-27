@@ -8433,8 +8433,52 @@ opacity:0.6;         //This grays it out to look disabled
   rgba(0, 0, 0, 0.5)), url("https://wallpapersmug.com/large/31bd25/laser-colorful-dots-abstract.jpg");
   background-size: 100% 20%;
 }
+.excersise2-background{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url("https://wallup.net/wp-content/uploads/2018/09/26/432723-abstract-factual-design-textures-colorful-lasers-piercing-lights.jpg");
+  background-size: 100% 20%;
+}
 
 .bg-goals{
   background: rgba(255, 255, 255, 0.85);
 
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+code {
+  font-family: MyFancyCustomFont, monospace;
+  font-size: inherit;
+}
+p > code,
+li > code,
+dd > code,
+td > code {
+  background: #ffeff0;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
