@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="wrapper d-flex align-items-stretch">
+<div class="wrapper d-flex align-items-stretch if-mobile-DN">
     <nav id="sidebar">
         <div class="custom-menu">
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
@@ -53,9 +53,10 @@
                 <a href="../menu/realization.html"><span class="fa fa-download mr-3"><small
                         class="d-flex align-items-center justify-content-center"></small></span> <i class="">2. Realization <p style="font-size: small">(3D graphic, obj creating)</p></i></a>
             </li>
-            <li class="disabled ">
-                <a href="#"><span class="fa fa-trophy mr-3"></span> <i class="dark-gray">3. Interaction <p
-                        style="font-size: small">(GVR assets)</p></i></a>
+            <li class="">
+                <a href="../menu/Interaction.html"><span class="fa fa-download mr-3"><small
+                        class="d-flex align-items-center justify-content-center"></small></span> <i class="">3. Interaction
+                    <p style="font-size: small">(GVR assets)</p></i></a>
             </li>
             <li class="disabled">
                 <a href="#"><span class="fa fa-cog mr-3"></span> <i class="dark-gray"> 4. Content not available</i></a>
@@ -233,6 +234,15 @@
     </div>
 
 </div>
+
+<div class="if-mobile-DPT" style="display: none">
+    <div class="text-center">
+        <p class="text-center"> This page is not optimalized for screens <600px :( </p>
+        <p class="text-center">¯\_(ツ)_/¯</p>
+    </div>
+</div>
+
+
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/popper.js"></script>

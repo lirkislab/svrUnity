@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="wrapper d-flex align-items-stretch">
+<div class="wrapper d-flex align-items-stretch if-mobile-DN">
     <nav id="sidebar">
         <div class="custom-menu">
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
@@ -54,9 +54,11 @@
                         class="d-flex align-items-center justify-content-center"></small></span> <i class="">2.
                     Realization <p style="font-size: small">(3D graphic, obj creating)</p></i></a>
             </li>
-            <li class="disabled ">
-                <a href="#"><span class="fa fa-trophy mr-3"></span> <i class="dark-gray">3. Interaction <p
-                        style="font-size: small">(GVR assets)</p></i></a>
+            <li class="">
+                <a href="../menu/Interaction.html"><span class="fa fa-download mr-3"><small
+                        class="d-flex align-items-center justify-content-center"></small></span> <i class="">3.
+                    Interaction
+                    <p style="font-size: small">(GVR assets)</p></i></a>
             </li>
             <li class="disabled">
                 <a href="#"><span class="fa fa-cog mr-3"></span> <i class="dark-gray"> 4. Content not available</i></a>
@@ -73,8 +75,8 @@
     </nav>
 
     <!-- Page Content  -->
-    <div id="content" class="p-4 p-md-5 pt-5 excersise2-background">
-        <h1 class="text-center white">Realization - Exercise 2.</h1>
+    <div id="content" class="p-4 p-md-5 pt-5 excersise3-background">
+        <h1 class="text-center white">Interaction - Exercise 3.</h1>
 
         <div class="">
             <div class="bg-steps row p-2 ">
@@ -86,7 +88,7 @@
                     <h4 class="white p-2"> 1. Goal </h4>
                 </div>
                 <div class="col-10 bg-goals">
-                    <h4 class="txt-black p-2"> 3D graphic in VR (Unity version with examples) </h4>
+                    <h4 class="txt-black p-2"> Download objects and textures </h4>
                 </div>
             </div>
             <div class=" row p-1">
@@ -94,7 +96,7 @@
                     <h4 class="white p-2"> 2. Goal </h4>
                 </div>
                 <div class="col-10 bg-goals">
-                    <h4 class="txt-black p-2"> Familiarization with Unity engine</h4>
+                    <h4 class="txt-black p-2"> Material creation and scene design</h4>
                 </div>
             </div>
             <div class=" row p-1">
@@ -102,7 +104,7 @@
                     <h4 class="white p-2"> 3. Goal </h4>
                 </div>
                 <div class="col-10 bg-goals">
-                    <h4 class="txt-black p-2"> Component explanation (with example) </h4>
+                    <h4 class="txt-black p-2"> Raycaster implementation </h4>
                 </div>
             </div>
             <div class=" row p-1">
@@ -110,7 +112,23 @@
                     <h4 class="white p-2"> 4. Goal </h4>
                 </div>
                 <div class="col-10 bg-goals">
-                    <h4 class="txt-black p-2"> Programing logic explanation in Unity </h4>
+                    <h4 class="txt-black p-2"> Set continual rotation with possibility to set up speed </h4>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 5. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Set dynamic visibility of an object adjustment </h4>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 6. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Set dynamic texture of an object adjustment</h4>
                 </div>
             </div>
             <!--            <div class=" row p-1">-->
@@ -131,20 +149,16 @@
             <div class="">
                 <div class="bg-steps row p-2 ">
                     <h2 class="col-3 white">1. Goal</h2>
-                    <p class="col-9 white">In this goal we want to learn how to set use optimized graphics for VR via
-                        Unity engine</p>
-                    <div class="">
-                        <p class="txt-black"> Helpfull literature: <a
-                                href="https://www.intechopen.com/online-first/3d-computer-graphics-and-virtual-reality" target="_blank">3D
-                            computer graphics and virtual reality </a></p>
-                    </div>
+                    <p class="col-9 white">In this goal we want to download and import objects and textures</p>
                 </div>
                 <div class=" row p-1">
                     <div class="col-1 bg-steps-info text-center">
                         <h4 class="white p-2"> 1. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <h3 class="white" > Lighting </h3>
+                        <p class="white"> (object) Bird: <a href="https://poly.pizza/m/eLozPlheJvf" target="_blank">
+                            download
+                            here </a></p>
                     </div>
                 </div>
                 <div class=" row p-1">
@@ -152,7 +166,8 @@
                         <h4 class="white p-2"> 2. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <h3 class="white" > 3D objects </h3>
+                        <p class="white"> (object) Mona lisa painting: <a href="https://poly.pizza/m/62zn39CRkbG"
+                                                                          target="_blank"> download here </a></p>
                     </div>
                 </div>
                 <div class=" row p-1">
@@ -160,7 +175,9 @@
                         <h4 class="white p-2"> 3. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <h3 class="white" > Camera </h3>
+                        <p class="white">(JPG texture) Wall texture: <a
+                                href="https://drive.google.com/file/d/1EPlzE1fCDZHgRAmkL81LnK1BXdSfDScV/view?usp=sharing"
+                                target="_blank"> download here </a></p>
                     </div>
                 </div>
                 <div class=" row p-1">
@@ -168,7 +185,8 @@
                         <h4 class="white p-2"> 4. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <h3 class="white" > Scenes </h3>
+                        <p class="white"> Import downloaded assets into project to the appropriate directory (Objects
+                            into object directory, textures into material directory)</p>
                     </div>
                 </div>
             </div>
@@ -178,20 +196,14 @@
             <div class="">
                 <div class="bg-steps row p-2">
                     <h3 class="col-3 white">2. Goal</h3>
-                    <p class="col-9 white">In this goal we want to get familiar with Unity engine</p>
-                    <div class="p-2 bg-gray">
-                        <p class="txt-black"><b> Note: This is not unity course! </b></p>
-                        <p class="txt-black"><b> Note: Unity is only a helpful tool to create virtual reality systems!
-                            Therefore, detail about operating/navigating in Unity engine will not be discussed into
-                            details. </b></p>
-                    </div>
+                    <p class="col-9 white">In this goal we want to create materials and design the scene</p>
                 </div>
                 <div class=" row p-1">
                     <div class="col-1 bg-steps-info text-center">
                         <h4 class="white p-2"> 1. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <p class="white "> Open project which you created in "Set-up environment" process </p>
+                        <p class="white "> Create a white-colored material and call it white</p>
                     </div>
                 </div>
                 <div class=" row p-1">
@@ -199,11 +211,11 @@
                         <h4 class="white p-2"> 2. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <p class="white"> You should have opened an Unity project with prepared packages and basic
-                            set-up</p>
+                        <p class="white"> Create a material with assigned texture. </p>
+                        <p> - firstly create a material and call it wall</p>
+                        <p> - then drag the downloaded image from <i>goal 1 step 3</i> as shown on a picture below:</p>
                         <img class="w-inherit p-2 w-50"
-                             src="https://drive.google.com/uc?export=view&id=1gNyMsH-hmcQiwKONc97v0MIx00ismapm">
-                        <p class="white"> Your window layout may vary </p>
+                             src="https://drive.google.com/uc?export=view&id=1epKrC9tKBE5CfkzJMtqRw31ojTVBk7Lz">
                     </div>
                 </div>
                 <div class=" row p-1">
@@ -211,8 +223,125 @@
                         <h4 class="white p-2"> 3. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <p class="white"> Let's shortly discuss the windows layout recommendation (recommended as
-                            picture above)</p>
+                        <p class="white"> 1. create an empty object and call it 'ActiveElements'</p>
+                        <p class="white"> 2. within ActiveElements create a cube and call it a 'Wall'</p>
+                        <p class="white"> 3. Stretch the wall (not ActiveElements!) oblong the plane and drag wall material on it.</p>
+                        <p class="white"> 4. Output should look something like this: </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center">scene</p>
+                                <img class="w-inherit p-2 w-100 h-auto"
+                                     src="https://drive.google.com/uc?export=view&id=1ekIt0eqf0l2_ynKbeYKV5D9JNeBo2xaW">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center">hierarchy</p>
+                                <img class="w-inherit p-2 w-50 center"
+                                     src="https://drive.google.com/uc?export=view&id=1xuV7B1L2ATv6RFrQpAeN09LmmfDucR0N">
+                            </div>
+                        </div>
+                        <p class="white"> 5. Make sure your avatar is facing the wall, if not, rotate it so it would </p>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 4. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> 1. Within an ActiveElements create an empty object statue</p>
+                        <p class="white"> 2. Within statue create 3D object cylinder</p>
+                        <p class="white"> 3. Assign wall material to a cylinder</p>
+                        <p class="white"> 4. Within statue, deploy downloaded object of a bird</p>
+                        <p class=""> Drag the 'model' under statue in hierarchy, call it bird, right-click on a bird and select unpack prefab completely</p>
+                        <p class="white"> 5. Place and scale the objects, so they would look something like this: </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center">scene</p>
+                                <img class="w-inherit p-2 w-100 h-auto"
+                                     src="https://drive.google.com/uc?export=view&id=19UxJlPsWAgo2D1fMg5SMCwsYXUV7urcn">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center">hierarchy</p>
+                                <img class="w-inherit p-2 w-50 center"
+                                     src="https://drive.google.com/uc?export=view&id=1moKcXlRn02cCP-FFhRBQ3nSmxdePVDED">
+                            </div>
+                        </div>
+                        <p class="white"> 6. Make sure your avatar is facing the wall, if not, rotate it around y axes so it would </p>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 5. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> 1. Within an ActiveElements drag an object of mona lisa painting and call it MonaLisa</p>
+                        <p class="white"> 2. Transform it so it would look something like this: </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center">scene</p>
+                                <img class="w-inherit p-2 w-100 h-auto"
+                                     src="https://drive.google.com/uc?export=view&id=1ZmY-lFaYrNjCj_7aufs2IjZDJDnBd5lK">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center">hierarchy</p>
+                                <img class="w-inherit p-2 w-50 center"
+                                     src="https://drive.google.com/uc?export=view&id=1p1gPRCcylm5Vl6g_niJVTVT7_x4vUIAt">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 6. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Disable cube</p>
+                        <p> You can disable it in inspector (where the components are) -> and on a left of the name of object is toggle box, if u toggle it, cube should disappear </p>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 7. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> 1. Create a cube within an ActiveElements and call it CustomPainting</p>
+                        <p class="white"> 2. Assign white texture on it</p>
+                        <p class="white"> 3. Transform it so it would look something like this: </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center">scene</p>
+                                <img class="w-inherit p-2 w-100 h-auto"
+                                     src="https://drive.google.com/uc?export=view&id=1UXf6FhAbLMYlclXDl_ewVxw7aTolJ6v2">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center">hierarchy</p>
+                                <img class="w-inherit p-2 w-50 center h-auto"
+                                     src="https://drive.google.com/uc?export=view&id=1CF4urjOOC11EyK4jrtuizVKlHo9xdE19">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 8. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> 1. Create an empty object and call it 'Lights' </p>
+                        <p class="white"> 2. Create 3 spotlights within the Lights</p>
+                        <p class="white"> 3. Transform it so it would look something like this: </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center">scene</p>
+                                <img class="w-inherit p-2 w-100 h-auto"
+                                     src="https://drive.google.com/uc?export=view&id=1-QxvA7uiofd6p7PIT8Qs6IPtufsxU8Mc">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center">hierarchy</p>
+                                <img class="w-inherit p-2 w-50 center h-auto"
+                                     src="https://drive.google.com/uc?export=view&id=1xYpCR10R_AfZFJVtzDC2k-MUdCFaKgt5">
+                            </div>
+                        </div>
+                        <p class="white"> 4. You can give it any color you want, i'll go with RGB ;) </p>
+                        <p class="white"> NOTE! as we mentioned in optimization, make sure areas of lights do not penetrate</p>
                     </div>
                 </div>
             </div>
@@ -223,16 +352,16 @@
             <div class="">
                 <div class="bg-steps row p-2">
                     <h2 class="col-3 white">3. Goal</h2>
-                    <p class="col-9 white">In this goal we want to look at the components of an objects</p>
+                    <p class="col-9 white">In this goal we want implement raycaster and all components for interacting </p>
                 </div>
                 <div class=" row p-1">
                     <div class="col-1 bg-steps-info text-center">
                         <h4 class="white p-2"> 1. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <p class="white"> Create a cube object</p>
-                        <img class="w-inherit w-50 "
-                             src="https://drive.google.com/uc?export=view&id=1l6Xkw0sxVUv9wVylI47ZirgWe4rZQsCf">
+                        <p class="white"> In package GoogleVR find prefab called GvrEventSystem and place it under a Settings</p>
+                        <img class="w-inherit w-50 " src="https://drive.google.com/uc?export=view&id=1BYcKGn-L81J2RfKqwo_4j-NAd7-RI-Nq">
+                        <p > discuss what it does</p>
                     </div>
                 </div>
                 <div class=" row p-1">
@@ -240,9 +369,9 @@
                         <h4 class="white p-2"> 2. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <p class="white"> Notice a cube components in inspector: </p>
-                        <img class="w-inherit w-50 "
-                             src="https://drive.google.com/uc?export=view&id=1_PEcw5axXRF3CUpVDLrOyP8pfY1tZ_YE">
+                        <p class="white"> In package GoogleVR find prefab called GvrReticlePointer and place it under a MainCamera</p>
+                        <img class="w-inherit w-50 " src="https://drive.google.com/uc?export=view&id=164DQqluKyioQKCDuSSz_L20gB1YpPYmc">
+                        <p > discuss what it does</p>
                     </div>
                 </div>
                 <div class=" row p-1">
@@ -250,16 +379,9 @@
                         <h4 class="white p-2"> 3. </h4>
                     </div>
                     <div class="col-11 bg-steps-content">
-                        <p class="white "> Discuss the components of existing objects in a scene
-                        <p>
-                    </div>
-                </div>
-                <div class=" row p-1">
-                    <div class="col-1 bg-steps-info text-center">
-                        <h4 class="white p-2"> 4. </h4>
-                    </div>
-                    <div class="col-11 bg-steps-content">
-                        <p class="white "> Discuss the creation of scene </p>
+                        <p class="white "> On a main camera add new component called GvrPointerPhysicsRaycaster<p>
+                        <img class="w-inherit w-50 " src="https://drive.google.com/uc?export=view&id=1z0OXTd_ixnq07oS5QEQPBZl-M894tRrg">
+                        <p > discuss what it does</p>
                     </div>
                 </div>
             </div>
@@ -270,18 +392,14 @@
         <div class="">
             <div class="bg-steps row p-2">
                 <h2 class="col-3 white">4. Goal</h2>
-                <p class="col-9 white">In this goal we want to learn how it works programmatically</p>
+                <p class="col-9 white">In this goal we want to implement continual rotation on bird object</p>
             </div>
             <div class=" row p-1">
                 <div class="col-1 bg-steps-info text-center">
                     <h4 class="white p-2"> 1. </h4>
                 </div>
                 <div class="col-11 bg-steps-content">
-                    <p class="white "> Let's take a closer look to creation of a cube.</p>
-                    <p class="white "> As we can create an object only by clicking the create option in an interface of
-                        unity, here is an example how it can looks programmatically with a cube example: </p>
-                    <img class="w-inherit w-50 "
-                         src="https://drive.google.com/uc?export=view&id=1EHcNMnQlKyHqEPDD-2Xy4D_TZuXSpO_W">
+                    <p class="white "> Create a new component on bird object and call it Rotate</p>
                 </div>
             </div>
             <div class=" row p-1">
@@ -289,10 +407,10 @@
                     <h4 class="white p-2"> 2. </h4>
                 </div>
                 <div class="col-11 bg-steps-content ">
-                    <p class="white"> In the Goal 3. we discussed scene creation, so what does it mean for object
-                        creation in a scene?</p>
+                    <p class="white"> Implement the code bellow into script Rotate</p>
                     <img class="w-inherit w-50"
-                         src="https://drive.google.com/uc?export=view&id=1nllbWKCRR6KTi9eu3RP-o_TwtEY5_Gx-">
+                         src="https://drive.google.com/uc?export=view&id=1lD2DR4IQDdYjBwyTrspxU1-Av8ZbXzvt">
+                    <p > discuss what it does</p>
                 </div>
             </div>
             <div class=" row p-1">
@@ -300,7 +418,43 @@
                     <h4 class="white p-2"> 3. </h4>
                 </div>
                 <div class="col-11 bg-steps-content ">
-                    <p class="white"> Discuss scene index and MonoBehaviourality</p>
+                    <p class="white"> Run the application and see the result </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!--            STEP 5 -->
+        <div class="">
+            <div class="bg-steps row p-2">
+                <h2 class="col-3 white">5. Goal</h2>
+                <p class="col-9 white">In this goal we want to implement dynamic visibility of a painting of a Mona Lisa, whenever our raycaster will hit the place, the painting will apear</p>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 1. </h4>
+                </div>
+                <div class="col-11 bg-steps-content">
+                    <p class="white "> Add a component on MonaLisa object called box collider</p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 2. </h4>
+                </div>
+                <div class="col-11 bg-steps-content ">
+                    <p class="white"> Create a new component script  on MonaLisa object and call it Visibility </p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 3. </h4>
+                </div>
+                <div class="col-11 bg-steps-content ">
+                    <p class="white"> Implement the code bellow into Visiblity </p>
+                    <img class="w-inherit w-50"
+                         src="https://drive.google.com/uc?export=view&id=1oempxbqnyZFL_XuNGrKMqfLVaS-uSpXN">
+                    <p > discuss what it does</p>
                 </div>
             </div>
             <div class=" row p-1">
@@ -308,7 +462,90 @@
                     <h4 class="white p-2"> 4. </h4>
                 </div>
                 <div class="col-11 bg-steps-content ">
-                    <p class="white"> Let's discuss where will be scenes created? :) </p>
+                    <p class="white"> 1. Add new component on MonaLisa object called Event trigger</p>
+                    <p class="white"> 2. Click Add New Event Type and chose PointerEnter</p>
+                    <p class="white"> 3. Hit the little + sign in a bottom of that tab</p>
+                    <p class="white"> 4. In a field 'None (Objects)' attach MonaLisa object</p>
+                    <p class="white"> 5. In a field 'No Function' choose from the dropdown Visibility and then Appear()</p>
+                    <p class="white"> 6. Output should look as the image bellow:</p>
+                    <img class="w-inherit w-50"
+                         src="https://drive.google.com/uc?export=view&id=1-xoiI15SV9nCmT4TQ3OAXAUQ9tcxagyh">
+
+
+                    <p class="white"> 7. Click Add New Event Type and chose PointerExit</p>
+                    <p class="white"> 8. Hit the little + sign in a bottom of that tab</p>
+                    <p class="white"> 9. In a field 'None (Objects)' attach MonaLisa object</p>
+                    <p class="white"> 10. In a field 'No Function' choose from the dropdown Visibility and then Disappear()</p>
+                    <p class="white"> 11. Output should look as the image bellow:</p>
+                    <img class="w-inherit w-50"
+                         src="https://drive.google.com/uc?export=view&id=18QEBC9mE03D0c2Sekg1vBTXfGQpb7i3p">
+                    <p></p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 5. </h4>
+                </div>
+                <div class="col-11 bg-steps-content ">
+                    <p class="white"> Run the application and see the result </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!--            STEP 6 -->
+        <div class="">
+            <div class="bg-steps row p-2">
+                <h2 class="col-3 white">6. Goal</h2>
+                <p class="col-9 white">In this goal we want to implement dynamic texture adjustment of a painting of a CustomPainting, whenever our raycaster will hit the place, the painting will apear</p>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 1. </h4>
+                </div>
+                <div class="col-11 bg-steps-content ">
+                    <p class="white"> Create a new component script on CustomPainting object and call it ChangeTexture </p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 3. </h4>
+                </div>
+                <div class="col-11 bg-steps-content ">
+                    <p class="white"> Implement the code bellow into ChangeTexture </p>
+                    <img class="w-inherit w-50"
+                         src="https://drive.google.com/uc?export=view&id=1MtamcjzSA1ywo7vhe7qy8avBeVe0j6v4">
+                    <p > discuss what it does</p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 4. </h4>
+                </div>
+                <div class="col-11 bg-steps-content ">
+                    <h4 class="white"> Now lets do the same thing as in the MonaLisa</h4>
+                    <p class="white"> 1. Add new component on CustomPainting object called Event trigger</p>
+                    <p class="white"> 2. Click Add New Event Type and chose PointerEnter</p>
+                    <p class="white"> 3. Hit the little + sign in a bottom of that tab</p>
+                    <p class="white"> 4. In a field 'None (Objects)' attach CustomPainting object</p>
+                    <p class="white"> 5. In a field 'No Function' choose from the dropdown ChangeTexture and then setCustomTexture()</p>
+                    <p> and then ... </p>
+                    <p class="white"> 6. Click Add New Event Type and chose PointerExit</p>
+                    <p class="white"> 7. Hit the little + sign in a bottom of that tab</p>
+                    <p class="white"> 8. In a field 'None (Objects)' attach MonaLisa object</p>
+                    <p class="white"> 9. In a field 'No Function' choose from the dropdown Visibility and then Disappear()</p>
+                    <p class="white"> 10. Output should look as the image bellow:</p>
+                    <img class="w-inherit w-50"
+                         src="https://drive.google.com/uc?export=view&id=1RJgvV00R7o8szhGmkzKxaMBdAjjdElac">
+                    <p></p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 5. </h4>
+                </div>
+                <div class="col-11 bg-steps-content ">
+                    <p class="white"> Run the application and see the result </p>
                 </div>
             </div>
         </div>
@@ -321,18 +558,26 @@
             </div>
             <div class=" row p-1">
                 <div class="col-12 bg-steps-content">
-                    <!--                    <p class="white "> Video will be uploaded after online exercise on monday </p>-->
-                    <!--                    <img class="w-10 h-10"-->
-                    <!--                         src="https://www.spartalibrary.org/wp-content/uploads/2020/04/yoda-patience-mem.jpg">-->
-                    <iframe width="500" height="400"
-                            src="https://www.youtube.com/embed/6MN5fFmuFuY">
-                    </iframe>
+                    <p class="white "> Video will be uploaded after online exercise on monday </p>
+                    <img class="w-10 h-10"
+                                             src="https://www.spartalibrary.org/wp-content/uploads/2020/04/yoda-patience-mem.jpg">
+<!--                    <iframe width="500" height="400" allow="fullscreen;"-->
+<!--                            src="https://www.youtube.com/embed/6MN5fFmuFuY">-->
+<!--                    </iframe>-->
                 </div>
             </div>
         </div>
 
     </div>
 </div>
+
+<div class="if-mobile-DPT" style="display: none">
+    <div class="text-center">
+        <p class="text-center"> This page is not optimalized for screens <600px :( </p>
+        <p class="text-center">¯\_(ツ)_/¯</p>
+    </div>
+</div>
+
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/popper.js"></script>

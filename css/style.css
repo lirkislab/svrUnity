@@ -8438,6 +8438,11 @@ opacity:0.6;         //This grays it out to look disabled
   rgba(0, 0, 0, 0.5)), url("https://wallup.net/wp-content/uploads/2018/09/26/432723-abstract-factual-design-textures-colorful-lasers-piercing-lights.jpg");
   background-size: 100% 20%;
 }
+.excersise3-background{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1588866054175-c8347662ec72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: 100% 20%;
+}
 
 .bg-goals{
   background: rgba(255, 255, 255, 0.85);
@@ -8481,4 +8486,16 @@ td > code {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .if-mobile-DN {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .if-mobile-DPT {
+    display: inherit !important;
+  }
 }
