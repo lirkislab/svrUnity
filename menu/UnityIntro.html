@@ -307,5 +307,13 @@
 <script src="../js/popper.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
+<script>
+    let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
+    if (isMobileDevice) {
+        window.open('mobile.html');
+    }
+</script>
 </body>
 </html>
