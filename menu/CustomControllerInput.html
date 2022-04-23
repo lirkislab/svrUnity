@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Virtual Reality Systems</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="../https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="wrapper d-flex align-items-stretch if-mobile-DN">
+    <nav id="sidebar">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            </button>
+        </div>
+        <div class="img bg-wrap text-center py-4"
+             style="background-image: url(https://scontent.fksc1-1.fna.fbcdn.net/v/t1.6435-9/73295856_2292915594351851_575696089210945536_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=yGC-ZT724bcAX-EPkIg&tn=IlRIds2fYuLGbcbn&_nc_ht=scontent.fksc1-1.fna&oh=00_AT8Ui5hc6upew8r2zJ21V3_VITgJrNktSrdLegze_7D1Bw&oe=6230592C);">
+            <div class="user-logo">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="img"
+                             style="background-image: url(https://kpi.fei.tuke.sk/sites/www.kpi.fei.tuke.sk/files/pictures/picture-11101-1647540531.jpg);"></div>
+                        <h3>Miriama Mattová</h3>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="img"
+                             style="background-image: url(https://kpi.fei.tuke.sk/sites/www.kpi.fei.tuke.sk/files/pictures/picture-32-1391785320.jpg);"></div>
+                        <h3>Branislav Sobota</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="list-unstyled components mb-5">
+            <li class="active">
+                <a href="../menu/home.html"><span class="fa fa-home mr-3"></span> Home</a>
+            </li>
+            <li>
+                <a href="../menu/set-up-environment.html"><span class="fa fa-sign-out mr-3"></span> Set-up the
+                    environment</a>
+            </li>
+            <li class=" ">
+                <a href="../menu/UnityIntro.html"><span class="fa fa-download mr-3"><small
+                        class="d-flex align-items-center justify-content-center"></small></span> <i class="">1.
+                    Introduction <p style="font-size: small">(Unity, components, programming)</p></i></a>
+            </li>
+            <li class="">
+                <a href="../menu/realization.html"><span class="fa fa-download mr-3"><small
+                        class="d-flex align-items-center justify-content-center"></small></span> <i class="">2.
+                    Realization <p style="font-size: small">(3D graphic, obj creating)</p></i></a>
+            </li>
+            <li class="">
+                <a href="../menu/Interaction.html"><span class="fa fa-download mr-3"><small
+                        class="d-flex align-items-center justify-content-center"></small></span> <i class="">3.
+                    Interaction
+                    <p style="font-size: small">(GVR assets)</p></i></a>
+            </li>
+            <li class="">
+                <a href="../menu/CustomControllerInput.html"><span class="fa fa-download mr-3"><small
+                        class="d-flex align-items-center justify-content-center"></small></span> <i class="">
+                    4. Custom Controller Input
+                    <p style="font-size: small">(movement, new input system)</p></i></a>
+            </li>
+            <li class="disabled ">
+                <a href="#"><span class="fa fa-support mr-3"></span> <i class="dark-gray">5. Content not
+                    available</i></a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5 excersise2-background">
+        <h1 class="text-center white">Custom Controller input - Exercise 4.</h1>
+
+        <div class="">
+            <div class="bg-steps row p-2 ">
+                <h2 class="col-12 white text-center">Exercise goals</h2>
+                <!--                <p class="col-9 white">In this goal we want to learn how to set up the environment</p>-->
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 1. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Download and set-up the new Input System into project</h4>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 2. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Connect controller to PC && verify connection in Unity</h4>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 3. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Mapping inputs from controller </h4>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-2 bg-steps-info text-center">
+                    <h4 class="white p-2"> 4. Goal </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Movement implementation </h4>
+                </div>
+            </div>
+
+            <div class=" row p-1">
+                <div class="col-2 bg-steps text-center">
+                    <h4 class="white p-2"> (additional) </h4>
+                </div>
+                <div class="col-10 bg-goals">
+                    <h4 class="txt-black p-2"> Let's Fire </h4>
+                </div>
+            </div>
+            <!--            <div class=" row p-1">-->
+            <!--                <div class="col-2 bg-steps-info text-center">-->
+            <!--                    <h4 class="white p-2"> 5. Goal </h4>-->
+            <!--                </div>-->
+            <!--                <div class="col-10 bg-goals">-->
+            <!--                    <h4 class="txt-black p-2"> Familiarization with the limitations of PG (computer graphics) in the-->
+            <!--                        development of VR (with examples) </h4>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--            STEP 1 -->
+        <div class="">
+            <div class="bg-steps row p-2 ">
+                <h2 class="col-3 white">1. Goal</h2>
+                <p class="col-9 white">In this goal we want download and set up new Input System from unity via package
+                    manager</p>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 1. </h4>
+                </div>
+                <div class="col-11 bg-steps-content">
+                    <p class="white"> Navigate to package manager </p>
+                    <p class="white"> window->package manager->(wait for packages to load, may take a while)->Input
+                        System->Install</p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 2. </h4>
+                </div>
+                <div class="col-11 bg-steps-content">
+                    <p class="white"> - Go to the player settings </p>
+                    <p class="white"> Edit->Project Settings->Player</p>
+                    <p class="white"> - In tab other settings search for Active Input Handling and select 'Both'</p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 3. </h4>
+                </div>
+                <div class="col-11 bg-steps-content">
+                    <img class="w-inherit p-2 w-50"
+                         src="https://drive.google.com/uc?export=view&id=1quoHLxy2WnYCbeV6f4wiOT-L50TdUCVe">
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 4. </h4>
+                </div>
+                <div class="col-11 bg-steps-content">
+                    <p class="white"> Discuss difference between new and old input manager</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!--            STEP 2 -->
+        <div class="">
+            <div class="bg-steps row p-2">
+                <h3 class="col-3 white">2. Goal</h3>
+                <p class="col-9 white">In this goal we want to connect our gamepad to the pc, and check if Unity is
+                    recognising the device</p>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 1. </h4>
+                </div>
+                <div class="col-11 bg-steps-content">
+                    <p class="white "> - Connect your gamepad via bluetooth to PC </p>
+                    <p class="white "><b>This step vary according to the device you have </b></p>
+                    <p class="white "> My device: </p>
+                    <img class="w-inherit p-2 w-50"
+                         src="https://drive.google.com/uc?export=view&id=1AwD1t6-Xkh0I7J88YY1TfVvgk_YCoEfd">
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 2. </h4>
+                </div>
+                <div class="col-11 bg-steps-content">
+                    <p class="white"> Open window-> analysis-> Input debugger</p>
+                </div>
+            </div>
+            <div class=" row p-1">
+                <div class="col-1 bg-steps-info text-center">
+                    <h4 class="white p-2"> 3. </h4>
+                </div>
+                <div class="col-11 bg-steps-content">
+                    <p class="white"> If you connected your input device correctly, you should see all of your input
+                        devices listed in a window</p>
+                    <img class="w-inherit p-2 w-50"
+                         src="https://drive.google.com/uc?export=view&id=1_cFP_K9PuB79xmx5XwHF8-vMu7C_8Pa0">
+                    <p class="white"> And yes, my controller is named 'Trust Gaming Mouse' for some reason</p>
+                </div>
+            </div>
+
+            <br>
+
+            <!--            STEP 3 -->
+            <div class="">
+                <div class="bg-steps row p-2 ">
+                    <h2 class="col-3 white">3. Goal</h2>
+                    <p class="col-9 white">In this goal we want to learn how to map inputs</p>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 1. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Create new directory InputManager and create new Action Map</p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=128uG4fK_qNsP-c1-WG5oR4GkzDNM3mow">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 2. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Create mappings as picture bellow & explain how it all works</p>
+                        <p class="white"><i>NOTE! Your controller input name may differ, so listen carefully how to set
+                            it up</i></p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center"> Mappings:</p>
+                                <img class="w-inherit p-2 w-100 center"
+                                     src="https://drive.google.com/uc?export=view&id=10bYVnuNjOXWi5eP3upDRz9x8lXtKmy1u">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center"> Commentary from mappings (No video yet ¯\_(ツ)_/¯)</p>
+                                <iframe class="center" width="500" height="350" allow="fullscreen;"
+                                        src="">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 3. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Dont forget to set up automatic generation of the class, otherwise you won't
+                            be able to find your mappings in a script</p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1H3ovImrutduR2A3D-AhWdwSssmCfRo5m">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!--            GOAL 4  -->
+            <div class="">
+                <div class="bg-steps row p-2 ">
+                    <h2 class="col-3 white">4. Goal</h2>
+                    <p class="col-9 white">In this goal we want check our input and implement movement</p>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 1. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> On object avatar/settings, create script 'Movement' </p>
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 2. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Firstly you need to add these functions to create instance of your mappings,
+                            to check your output from the controller and lastly to enable/disable your mappings </p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1w9NyoTkFi4imfcubqkw1CwgrAcobr2SM">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 3. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Outputs from my device for Vector 2 are following: </p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=1EAHpzSMqIkigBtPHEPiFP0is-thkN4aO">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 4. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Add 'character controller' component on avatar and set parameters as
+                            follows:</p>
+                        <img class="w-inherit p-2 w-50"
+                             src="https://drive.google.com/uc?export=view&id=19B3FLCHc6Aw8NAMChw0qDdqWJkSgIPMO">
+                    </div>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-1 bg-steps-info text-center">
+                        <h4 class="white p-2"> 5. </h4>
+                    </div>
+                    <div class="col-11 bg-steps-content">
+                        <p class="white"> Implement Movement</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center"> Script:</p>
+                                <img class="w-inherit p-2 w-100 center"
+                                     src="https://drive.google.com/uc?export=view&id=1w5iapznKzSTIX8NRVrdVFTnNJVLZZVVp">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center"> Commentary from implementation (No video yet ¯\_(ツ)_/¯)</p>
+                                <iframe class="center" width="500" height="350" allow="fullscreen;"
+                                        src="">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <!--            BONUS-->
+            <div class="">
+                <div class="bg-steps row p-2 ">
+                    <h2 class="col-3 white">LETS'S FIRE</h2>
+                    <p class="col-9 white">What about shooting bullets? </p>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-2 bg-steps-info text-center">
+                        <p class="white"> Secret model: <a
+                                href="https://rigmodels.com/model.php?view=Flash_Character-3d-model__W4NC4M0MD7Q065DWRCZA616Q4&searchkeyword=flash"
+                                target="_blank">
+                            here</a></p>
+                        <p> target:</p>
+                        <img class="w-inherit p-2 w-100 center"
+                             src="https://drive.google.com/uc?export=view&id=1xcNjTaXjqaSe69kScSkH8JY9SLmmMan7">
+                        <p> ammo:</p>
+                        <img class="w-inherit p-2 w-100 center"
+                             src="https://drive.google.com/uc?export=view&id=1346bWixfuckoFYaJwblerh7mb0Uw2V0h">
+                    </div>
+                    <div class="col-10 bg-steps-content">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-center"> Script:</p>
+                                <img class="w-inherit p-2 w-100 center"
+                                     src="https://drive.google.com/uc?export=view&id=1rPv8bSXFYs4mo1IT0AUm3Q9a3pg_EJS0">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-center"> Commentary (No video yet ¯\_(ツ)_/¯)</p>
+                                <iframe class="center" width="500" height="350" allow="fullscreen;"
+                                        src="">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="">
+                <div class="bg-steps row p-2">
+                    <h2 class="col-12 white">Video from online excersise </h2>
+                </div>
+                <div class=" row p-1">
+                    <div class="col-12 bg-steps-content">
+                        <p class="white "> Video will be uploaded after online exercise on monday </p>
+                        <img class="w-10 h-10"
+                             src="https://www.spartalibrary.org/wp-content/uploads/2020/04/yoda-patience-mem.jpg">
+                        <!--                        <iframe width="500" height="400" allow="fullscreen;"-->
+                        <!--                                src="https://www.youtube.com/embed/4dvvCL2zZ88">-->
+                        <!--                        </iframe>-->
+                        <!--                        <p> Spominana dokumentacia na unity scripting <a-->
+                        <!--                                href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/" target="_blank">-->
+                        <!--                            https://docs.unity3d.com/2019.4/Documentation/ScriptReference/</a></p>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="if-mobile-DPT" style="display: none">
+    <div class="text-center">
+        <p class="text-center"> This page is not optimalized for screens <600px :( </p>
+        <p class="text-center">¯\_(ツ)_/¯</p>
+    </div>
+</div>
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
